@@ -28,14 +28,14 @@ Tag.belongsToMany(Product, {
   foreignKey: 'tag_id'
 });
 
-// Through ProductTag
-ProductTag.belongsTo(Product, {
-  foreignkey: 'product_id'
-});
+// // Through ProductTag
+// ProductTag.belongsTo(Product, {
+//   foreignkey: 'product_id'
+// });
 
-ProductTag.belongsTo(Tag, {
-  foreignKey: 'tag_id'
-});
+// ProductTag.belongsTo(Tag, {
+//   foreignKey: 'tag_id'
+// });
 
 module.exports = {
   Product,
